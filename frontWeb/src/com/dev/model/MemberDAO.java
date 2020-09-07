@@ -72,9 +72,9 @@ public class MemberDAO {
 				member.setId(rs.getString(1)); // 컬럼이 첫번째 자리라서 1을 입력한거임
 				member.setPw(rs.getString("pw"));
 				member.setJob(rs.getString("job")); // 컬럼명에다가 별칭있으면 별칭을 넣어줘야함
-				member.setReason(rs.getString("reason")); // 대소문자 구별 없음
+				member.setReason(rs.getString("motive")); // 대소문자 구별 없음
 				member.setGender(rs.getString("gender"));
-				member.setMailyn(rs.getString("mailyn"));
+				member.setMailyn(rs.getString("mail"));
 				member.setHobby(rs.getString("hobby"));
 				member.setRegdate(rs.getString("regdate"));
 				list.add(member); // resultVo를 list에 담음

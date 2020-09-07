@@ -11,7 +11,7 @@
 <body>
 도착?
 
-	
+	<c:forEach items="${ member1 }" var="member">
 	${ member.id }
 	${ member.pw }
 	${ member.gender }
@@ -19,6 +19,6 @@
 	${ member.reason }
 	${ member.job }
 	${ member.hobby }
-	
+	</c:forEach>
 </body>
 </html>
